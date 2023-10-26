@@ -49,10 +49,6 @@ public class Animal {
         return type.name().toLowerCase();
     }
 
-    public void setType(Type type) {
-        this.type = type;
-    }
-
     public int getNumberOfAnimals() {
         if (numberOfAnimals < 2) {
             System.out.println("There is currently " + numberOfAnimals + " animal in our world.");
