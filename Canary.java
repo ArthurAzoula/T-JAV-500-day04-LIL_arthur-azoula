@@ -1,4 +1,4 @@
-public class Canary {
+public class Canary extends Animal {
 
     private int eggs;
 
