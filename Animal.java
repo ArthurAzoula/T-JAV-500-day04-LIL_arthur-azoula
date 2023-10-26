@@ -59,27 +59,27 @@ public class Animal {
 
     public int getNumberOfMammals() {
         if (numberOfMammals < 2) {
-            System.out.println("There is currently " + numberOfMammals + " " + this.getType() + " mammal in our world.");
+            System.out.println("There is currently " + numberOfMammals + " mammal in our world.");
         } else {
-            System.out.println("There are currently " + numberOfMammals + " " + this.getType() + " mammals in our world.");
+            System.out.println("There are currently " + numberOfMammals + " mammals in our world.");
         }
         return numberOfMammals;
     }
 
     public int getNumberOfFish() {
         if (numberOfFish < 2) {
-            System.out.println("There is currently " + numberOfFish + " " + this.getType() + " fish in our world.");
+            System.out.println("There is currently " + numberOfFish + " fish in our world.");
         } else {
-            System.out.println("There are currently " + numberOfFish + " " + this.getType() + " fish in our world.");
+            System.out.println("There are currently " + numberOfFish + " fish in our world.");
         }
         return numberOfFish;
     }
 
     public int getNumberOfBirds() {
         if (numberOfBirds < 2) {
-            System.out.println("There is currently " + numberOfBirds + " " + this.getType() + " bird in our world.");
+            System.out.println("There is currently " + numberOfBirds + " bird in our world.");
         } else {
-            System.out.println("There are currently " + numberOfBirds + " " + this.getType() + " birds in our world.");
+            System.out.println("There are currently " + numberOfBirds + " birds in our world.");
         }
         return numberOfBirds;
     }
