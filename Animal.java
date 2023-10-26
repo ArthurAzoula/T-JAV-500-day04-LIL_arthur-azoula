@@ -1,35 +1,44 @@
 public class Animal {
 
+    private static int numberOfAnimals = 0;
+    private static int numberOfMammals = 0;
+    private static int numberOfFish = 0;
+    private static int numberOfBirds = 0;
     protected String name;
-
     protected int legs;
+    protected Type type;
 
     protected enum Type {
         MAMMAL,
         FISH,
-        BIRD;
+        BIRD
     }
-
-    protected Type type;
-
-    private static int numberOfAnimals = 0;
-
-    private static int numberOfMammals = 0;
-
-    private static int numberOfFish = 0;
-
-    private static int numberOfBirds = 0;
 
     protected Animal(String name, int legs, Type type) {
         this.name = name;
         this.legs = legs;
         this.type = type;
         numberOfAnimals++;
+        switch (type) {
+            case MAMMAL:
+                numberOfMammals++;
+                break;
+            case FISH:
+                numberOfFish++;
+                break;
+            case BIRD:
+                numberOfBirds++;
+                break;
+        }
         System.out.println("My name is " + this.name + " and I am a " + this.getType() + "!");
     }
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getLegs() {
@@ -38,10 +47,6 @@ public class Animal {
 
     public String getType() {
         return type.name().toLowerCase();
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void setType(Type type) {
