@@ -17,7 +17,9 @@ public class Cat extends Animal {
         return this.color;
     }
 
-    public meow
+    public void meow() {
+        System.out.println(this.getName() + " the " + this.getColor() + " kitty is meowing.");
+    }
 
 
 }
