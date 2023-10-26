@@ -29,7 +29,7 @@ public class Shark extends Animal {
             this.frenzy = false;
             System.out.println(this.getName() + " ate a " + animal.getType() + " named " + animal.getName() + ".");
         } else {
-            System.out.println(this.getName() + " It's not worth my time.");
+            System.out.println(this.getName() + ": It's not worth my time.");
         }
     }
 
